@@ -1,4 +1,5 @@
 "$schema" = 'https://starship.rs/config-schema.json'
+
 [aws]
 symbol = "  "
 
@@ -56,10 +57,9 @@ symbol = " "
 [hg_branch]
 symbol = " "
 
-
 [java]
 symbol = " "
-style = "bright-green"
+style = "green"
 
 [julia]
 symbol = " "
@@ -86,42 +86,8 @@ symbol = " "
 symbol = " "
 
 [os.symbols]
-Alpaquita = " "
-Alpine = " "
-Amazon = " "
-Android = " "
-Arch = " "
-Artix = " "
-CentOS = " "
-Debian = " "
-DragonFly = " "
-Emscripten = " "
-EndeavourOS = " "
-Fedora = " "
-FreeBSD = " "
-Garuda = "󰛓 "
-Gentoo = " "
-HardenedBSD = "󰞌 "
-Illumos = "󰈸 "
 Linux = " "
-Mabox = " "
 Macos = " "
-Manjaro = " "
-Mariner = " "
-MidnightBSD = " "
-Mint = " "
-NetBSD = " "
-NixOS = " "
-OpenBSD = "󰈺 "
-openSUSE = " "
-OracleLinux = "󰌷 "
-Pop = " "
-Raspbian = " "
-Redhat = " "
-RedHatEnterprise = " "
-Redox = "󰀘 "
-Solus = "󰠳 "
-SUSE = " "
 Ubuntu = " "
 Unknown = " "
 Windows = "󰍲 "
@@ -185,10 +151,9 @@ disabled = false
 threshold = 1
 symbol = "↕️ "
 
-
 format = """
 $os$username$hostname:$directory$git_branch$git_status$git_commit$python$cmd_duration
-$character
+$character 
 """
 
 [username]
@@ -200,5 +165,5 @@ show_always = true
 
 [hostname]
 ssh_only = false
-format = "[@$hostname](green bold)"
+format = "[@$hostname](green bold) "
 disabled = false
