@@ -25,3 +25,14 @@ cd ~/.config/
 ```console
 git clone https://github.com/campbell-frost/starshipTOML
 ```
+
+```console
+cd ..\Documents
+```
+
+```console
+if (-not (Test-Path "C:\Users\Campbell\Documents\WindowsPowerShell")) {
+    New-Item -Path "C:\Users\Campbell\Documents" -Name "WindowsPowerShell" -ItemType "Directory" | Out-Null
+}
+Set-Location "C:\Users\Campbell\Documents\WindowsPowerShell"
+```
