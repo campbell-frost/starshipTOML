@@ -1,15 +1,15 @@
-'''console
+```console
 Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
-'''
-'''console
+```
+```console
 Invoke-RestMethod -Uri https://get.scoop.sh | Invoke-Expression
-'''
-'''console
+```
+```console
 scoop bucket add main
-'''
-'''console
+```
+```console
 scoop install main/starship
-'''
-'''console
+```
+```console
 scoop install main/zoxide
-'''
+```
