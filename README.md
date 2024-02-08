@@ -23,7 +23,11 @@ cd ~/.config/
 ```
 
 ```console
-git clone https://github.com/campbell-frost/starshipTOML
+touch starship.toml
+```
+
+```console
+git clone https://github.com/campbell-frost/starshipTOML .
 ```
 
 ```console
