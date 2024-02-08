@@ -19,9 +19,9 @@ scoop install main/zoxide
 ```
 
 ```console
-touch ~/.config/starship.toml
+cd ~/.config/
 ```
 
 ```console
-cd ~/.config/starship.toml
+git clone https://github.com/campbell-frost/starshipTOML
 ```
