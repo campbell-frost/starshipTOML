@@ -1,6 +1,6 @@
+#For windows
 ```console
 Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
-```
 
 ```console
 Invoke-RestMethod -Uri https://get.scoop.sh | Invoke-Expression
@@ -39,4 +39,6 @@ if (-not (Test-Path "C:\Users\Campbell\Documents\WindowsPowerShell")) {
     New-Item -Path "C:\Users\Campbell\Documents" -Name "WindowsPowerShell" -ItemType "Directory" | Out-Null
 }
 Set-Location "C:\Users\Campbell\Documents\WindowsPowerShell"
+```
+
 ```
