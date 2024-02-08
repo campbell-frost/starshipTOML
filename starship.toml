@@ -1,3 +1,4 @@
+"$schema" = 'https://starship.rs/config-schema.json'
 [aws]
 symbol = "  "
 
@@ -55,11 +56,10 @@ symbol = " "
 [hg_branch]
 symbol = " "
 
-[hostname]
-ssh_symbol = " "
 
 [java]
 symbol = " "
+style = "bright-green"
 
 [julia]
 symbol = " "
@@ -166,10 +166,10 @@ behind = "🐢 ×${count}"
 diverged = "🔱 🏎️ 💨 ×${ahead_count} 🐢 ×${behind_count}"
 untracked = "🛤️  ×${count}"
 stashed = "📦 "
-modified = "📝 ×${count}"
-staged = "🗃️  ×${count}"
-renamed = "📛 ×${count}"
-deleted = "🗑️  ×${count}"
+modified = "📝 ×${count} "
+staged = "🗃️  ×${count} "
+renamed = "📛 ×${count} "
+deleted = "🗑️  ×${count} "
 style = "bright-white"
 format = "$all_status$ahead_behind"
 
@@ -180,10 +180,25 @@ style = "bold dimmed white"
 disabled = false
 symbol = "󰍛 "
 
-
 [shlvl]
 disabled = false
 threshold = 1
 symbol = "↕️ "
 
 
+format = """
+$os$username$hostname:$directory$git_branch$git_status$git_commit$python$cmd_duration
+$character
+"""
+
+[username]
+style_user = "green bold"
+style_root = "red bold"
+format = "[$user]($style)"
+disabled = false
+show_always = true
+
+[hostname]
+ssh_only = false
+format = "[@$hostname](green bold)"
+disabled = false
